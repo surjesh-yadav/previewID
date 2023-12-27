@@ -1,5 +1,6 @@
 import React from 'react'
 import img1 from '../image/Vector.svg'
+import{ ConnectWallet }from "@thirdweb-dev/react"
 const PriviewId = () => {
   return (
     <div className='container'>
@@ -14,8 +15,9 @@ const PriviewId = () => {
                     </div>
                 </div>
 
+
                 <div className='connect_btn'>
-                    <button>Connect</button>
+                    <ConnectWallet   switchToActiveChain={true}/>
                 </div>
         </div>
     </div>
